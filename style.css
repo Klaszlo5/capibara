@@ -1,0 +1,40 @@
+.nagykep img, .kiskep img{
+    width:100%;
+}
+nav, article, main, div, footer, header, section {
+    border: 2px black solid;
+}
+header{
+    background-color: gray;
+    margin-left: 1200px;
+    margin-right: 1200px;
+}
+main{
+    background-color: aqua;
+}
+article{
+    margin-left:300px;
+    margin-right:300px;
+}
+nav{
+    background-color: black;
+}
+li a{
+    list-style-type: none;
+    font-size: 20px;
+    color:beige;
+}
+.kiskep{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+@media screen and(max-width:800px){
+    .kiskep{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and(max-width:400px){
+    .kiskep{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
